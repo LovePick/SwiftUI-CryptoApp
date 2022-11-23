@@ -12,6 +12,9 @@
 		C1D9F1A3292DFFD000742F88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D9F1A2292DFFD000742F88 /* Preview Assets.xcassets */; };
 		C1D9F1AA292E01BA00742F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D9F1A9292E01BA00742F88 /* Assets.xcassets */; };
 		C1D9F1AD292E036B00742F88 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9F1AC292E036B00742F88 /* Color.swift */; };
+		C1D9F1B3292E0A1900742F88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9F1B2292E0A1900742F88 /* HomeView.swift */; };
+		C1D9F1B7292E0B1000742F88 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9F1B6292E0B1000742F88 /* CircleButtonView.swift */; };
+		C1D9F1B9292E112C00742F88 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D9F1B8292E112C00742F88 /* CircleButtonAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		C1D9F1A2292DFFD000742F88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C1D9F1A9292E01BA00742F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		C1D9F1AC292E036B00742F88 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C1D9F1B2292E0A1900742F88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C1D9F1B6292E0B1000742F88 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		C1D9F1B8292E112C00742F88 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 				C1D9F19B292DFFCF00742F88 /* SwiftCryptoApp.swift */,
 				C1D9F19D292DFFCF00742F88 /* ContentView.swift */,
 				C1D9F1AB292E035000742F88 /* Extensions */,
+				C1D9F1AE292E09D600742F88 /* Core */,
 				C1D9F1A9292E01BA00742F88 /* Assets.xcassets */,
 				C1D9F1A1292DFFD000742F88 /* Preview Content */,
 			);
@@ -76,6 +83,56 @@
 				C1D9F1AC292E036B00742F88 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C1D9F1AE292E09D600742F88 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9F1B4292E0AD900742F88 /* Components */,
+				C1D9F1AF292E09E600742F88 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C1D9F1AF292E09E600742F88 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9F1B1292E09FA00742F88 /* ViewModels */,
+				C1D9F1B0292E09F200742F88 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C1D9F1B0292E09F200742F88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9F1B2292E0A1900742F88 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1D9F1B1292E09FA00742F88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C1D9F1B4292E0AD900742F88 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9F1B5292E0AED00742F88 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C1D9F1B5292E0AED00742F88 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				C1D9F1B6292E0B1000742F88 /* CircleButtonView.swift */,
+				C1D9F1B8292E112C00742F88 /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1D9F19E292DFFCF00742F88 /* ContentView.swift in Sources */,
+				C1D9F1B3292E0A1900742F88 /* HomeView.swift in Sources */,
 				C1D9F19C292DFFCF00742F88 /* SwiftCryptoApp.swift in Sources */,
+				C1D9F1B7292E0B1000742F88 /* CircleButtonView.swift in Sources */,
 				C1D9F1AD292E036B00742F88 /* Color.swift in Sources */,
+				C1D9F1B9292E112C00742F88 /* CircleButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
