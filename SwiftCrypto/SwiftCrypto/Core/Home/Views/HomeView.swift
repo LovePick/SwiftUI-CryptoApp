@@ -38,7 +38,7 @@ struct HomeView: View {
                 
                 
                 Spacer(minLength: 0)
-            }
+            }//: VSTACK
             
         }//: ZSTACK
     }
